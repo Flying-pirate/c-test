@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
+#include <windows.h>
+#include <stdlib.h>
 
 int main() {
 	char arr1[] = {"Welcom to the Flying-pirate's world!!!!"};
@@ -12,6 +14,8 @@ int main() {
 		arr2[right] = arr1[right];
 		left++;
 		right--;
+		Sleep(100);//加入头文件#include <windows.h>
+		system("cls");//执行一次，清空屏幕，加入#include <stdlib.h>
 		printf("%s\n", arr2);//用“%c\n”出现错误
 	}
 	
